@@ -1,0 +1,14 @@
+extend layout
+
+block content
+    .container
+        .starter-template
+            h1= markdownFile.meta.title
+            
+            != markdownFile.parseContent()
+
+        footer
+            hr
+            | <strong>Created:</strong> #{markdownFile.created} <br/>
+            | <strong>Last modfied:</strong> #{markdownFile.modified} <br/>
+            | <strong>Size:</strong> #{markdownFile.size} bytes

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghost Down Editor</title>
+    <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+    <link href="css/ghostdown.css" media="all" rel="stylesheet">
+</head>
+<body>
+
+<div class="features">
+
+    <section class="editor">
+        <div class="outer">
+            <div class="editorwrap">
+                <section class="entry-markdown">
+                    <header class="floatingheader">
+                        &nbsp;&nbsp; Markdown 
+                    </header>
+                    <section class="entry-markdown-content">
+                        <textarea id="entry-markdown">
+                            <%- markdownFile.rawContent %> 
+                        </textarea>
+                    </section>
+                </section>
+                <section class="entry-preview active">
+                    <header class="floatingheader">
+                        &nbsp;&nbsp; Preview <span class="entry-word-count">0 words</span>
+                    </header>
+                    <section class="entry-preview-content">
+                        <div class="rendered-markdown"></div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="js/ghostdown.js"></script>	
+</body>
+</html>
+
+

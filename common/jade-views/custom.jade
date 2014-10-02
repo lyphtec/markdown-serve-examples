@@ -1,0 +1,12 @@
+extend layout
+
+block content
+    .container
+        h1 (Custom view) #{markdownFile.meta.title}
+
+        != markdownFile.parseContent()
+
+        footer
+            hr
+            | <strong>Created:</strong> #{markdownFile.created} <br/>
+            | <strong>Checksum:</strong> #{markdownFile.checksum}
