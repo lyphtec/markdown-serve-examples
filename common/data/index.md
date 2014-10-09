@@ -10,7 +10,7 @@ Some random points:
 1. It's the most awesome
 1. Did I say awesome?
 
-![Puppies!](http://placepuppy.it/400/300)
+![Some random image!](http://lorempixel.com/400/300)
 
 ```js
 var markdownServe = require('markdown-serve');

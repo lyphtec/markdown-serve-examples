@@ -1,7 +1,11 @@
 # hbs view engine sample
 
-This sample is basically the simple-middleware sample but uses the [hbs](https://github.com/donpark/hbs) view engine instead.
+Samples using the [hbs](https://github.com/donpark/hbs) view engine.
 
-As hbs doesn't support calling methods on the view model in the view, `markdownFile.parseContent()` will not work.  Thus, we set the
-`preParse` option to true in the middleware to have the parsed HTML content available as `markdownFile.parsedContent`.  This property can
-then be used directly in the view.
+As hbs doesn't support calling methods on the view model in the view, `markdownFile.parseContent()` will not work.
+
+We can either set the `preParse` option to true in the middleware to have the parsed HTML content available as `markdownFile.parsedContent`.
+This can be seen the the `app.js` sample.
+
+The `preParseFn.js` sample shows using preParse cas a custom function.  We must return an object from the function.  This gives us the
+flexibility to re-map any of the properties of `markdownFile`.
