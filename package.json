@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Samples for markdown-serve",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +26,7 @@
     "ejs": "^1.0.0",
     "errorhandler": "^1.2.0",
     "express": "^4.9.6",
+    "express-handlebars": "^1.1.0",
     "hbs": "^2.7.0",
     "jade": "^1.7.0",
     "markdown-serve": "*",

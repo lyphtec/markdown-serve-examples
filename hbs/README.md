@@ -7,5 +7,5 @@ As hbs doesn't support calling methods on the view model in the view, `markdownF
 We can either set the `preParse` option to true in the middleware to have the parsed HTML content available as `markdownFile.parsedContent`.
 This can be seen the the `app.js` sample.
 
-The `preParseFn.js` sample shows using preParse cas a custom function.  We must return an object from the function.  This gives us the
+The `preParseFn.js` sample shows using preParse as a custom function.  We must return an object from the function.  This gives us the
 flexibility to re-map any of the properties of `markdownFile`.
